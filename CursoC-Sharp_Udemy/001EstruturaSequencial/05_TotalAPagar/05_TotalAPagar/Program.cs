@@ -1,0 +1,30 @@
+﻿using System;
+using System.Globalization;
+
+namespace _05_TotalAPagar
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite Código, Quantidade e Valor da peça 1 [Ex: X Y ZZ.ZZ]");
+            string[] pc1 = Console.ReadLine().Split(' ');
+            string cod1 = pc1[0];
+            int qtd1 = int.Parse(pc1[1]);
+            double valor1 = double.Parse(pc1[2], CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Digite Código, Quantidade e Valor da peça 2 [Ex: X Y ZZ.ZZ]");
+            string[] pc2 = Console.ReadLine().Split(' ');
+            string cod2 = pc2[0];
+            int qtd2 = int.Parse(pc2[1]);
+            double valor2 = double.Parse(pc2[2], CultureInfo.InvariantCulture);
+
+            double vlrtot1 = qtd1 * valor1;
+            double vlrtot2 = qtd2 * valor2;
+
+            double total = vlrtot1 + vlrtot2;
+
+            Console.WriteLine("VALOR A PAGAR: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));
+        }
+    }
+}
