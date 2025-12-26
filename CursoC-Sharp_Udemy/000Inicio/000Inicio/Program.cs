@@ -7,6 +7,7 @@ namespace PrimeiroProjeto
     {
         static void Main(string[] args)
         {
+            //imprimindo uma mensagem na tela
             Console.WriteLine("Hello world!");
         }
     }

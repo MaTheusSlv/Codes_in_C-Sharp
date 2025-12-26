@@ -7,9 +7,11 @@ namespace _04_Divisao
     {
         static void Main(string[] args)
         {
+            //pede o número de pares
             Console.WriteLine("Digite o número de pares:");
             int num = int.Parse(Console.ReadLine());
 
+            //pede os pares
             Console.WriteLine("Digite os pares [Ex= a b]:");
 
             for (int i = 0; i < num; i++)
@@ -18,6 +20,7 @@ namespace _04_Divisao
                 double fir = double.Parse(par[0]);
                 int sec = int.Parse(par[1]);
 
+                //verifica se a divisão entre eles é possível
                 if (sec == 0)
                 {
                     Console.WriteLine("Divisão Impossível, Denominador = 0");

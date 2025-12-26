@@ -7,11 +7,13 @@ namespace _08_ImpostoLisarb
     {
         static void Main(string[] args)
         {
+            //pede o salário do funcionário
             Console.WriteLine("Digite o salário do Colaborador:");
             double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+            //Verifica o imposto a ser aplicado à partir da regra
             double imposto;
-            //Verifica o imposto a ser aplicado
+
             if (salario <= 2000.00)
             {
                 imposto = 0.00;

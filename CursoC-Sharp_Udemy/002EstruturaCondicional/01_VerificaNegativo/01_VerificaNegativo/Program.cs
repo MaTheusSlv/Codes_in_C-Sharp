@@ -6,9 +6,11 @@ namespace _01_VerificaNegativo
     {
         static void Main(string[] args)
         {
+            //pedindo o número a ser verificado
             Console.WriteLine("Digite um número para ser verificado:");
             int num = int.Parse(Console.ReadLine());
 
+            //verificando se o número é negativo
             if (num >= 0)
             {
                 Console.WriteLine("NAO NEGATIVO");

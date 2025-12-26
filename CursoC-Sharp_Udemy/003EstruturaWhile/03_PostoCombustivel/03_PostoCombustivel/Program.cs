@@ -6,6 +6,7 @@ namespace _03_PostoCombustivel
     {
         static void Main(string[] args)
         {
+            //pede o código do tipo de combustível
             Console.WriteLine("Informe o código do tipo do Combustível\n1.Álcool; 2.Gasolina; 3.Diesel\n4.Fim da lista:");
             int informado = int.Parse(Console.ReadLine());
 
@@ -13,6 +14,7 @@ namespace _03_PostoCombustivel
             int gasolina = 0;
             int diesel = 0;
 
+            //faz a contagem do que foi informado
             while (informado != 4)
             {
                 if (informado == 1)
@@ -30,6 +32,7 @@ namespace _03_PostoCombustivel
 
                 informado = int.Parse(Console.ReadLine());
             }
+            //mostra o resultado final
             Console.WriteLine("MUITO OBRIGADO!");
             Console.WriteLine("Álcool: " + alcool);
             Console.WriteLine("Gasolina: " + gasolina);

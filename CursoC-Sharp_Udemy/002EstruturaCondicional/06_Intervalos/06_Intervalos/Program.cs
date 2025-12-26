@@ -7,9 +7,11 @@ namespace _06_Intervalos
     {
         static void Main(string[] args)
         {
+            //pedindo um número para verificar qual é seu intervalo
             Console.WriteLine("Digite um número pra verificar seu intervalo [Ex= X.XX]:");
             double num = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+            //verificando intervalo
             if (num < 0.00 || num > 100.00)
             {
                 Console.WriteLine("Fora de Intervalo");
